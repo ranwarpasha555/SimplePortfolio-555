@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/styles1.css' %}">
+  <title>Contact</title>
+</head>
+
+<body>
+
+  <!--navigation bar..-->
+
+  <div class="navig">
+    <div class="">
+      <a href="{% url 'index' %}">Home</a>
+    </div>
+
+    <div class="">
+      <a href="{% url 'contacts' %}">Contacts</a>
+    </div>
+
+    <div class="">
+      <a href="{% url 'certificates' %}">Certificates</a>
+    </div>
+  </div>
+
+  <div class="move-box">
+    <div class="movewords">
+      🌞CONTACT US🌞
+    </div>
+  </div>
+
+  <!--form..-->
+
+  <div class="form-container">
+    <form action="{% url 'contacts' %}" method="post">{% csrf_token %}
+      <p>
+        <label for="name">Name : </label>
+        <input type="text" id="name" name="name" />
+      </p>
+
+      <p>
+        <label for="mail">Email : </label>
+        <input type="email" id="mail" name="email" />
+      </p>
+
+      <p>
+        <label for="number">Number : </label>
+        <input type="text" id="number" name="number" />
+      </p>
+      <p>
+        <label for="number">Date&Time : </label>
+        <input type="date" id="date" name="date" />
+      </p>
+      <p>
+        <label for="msg">Message : </label>
+        <textarea id="msg" name="desc"></textarea>
+      </p>
+
+      <p class="button">
+        <button type="submit">Send your message</button>
+      </p>
+    </form>
+  </div>
+
+  <div class="footer-container">
+    <div>
+      <span>&#169;</span><span>2024</span>
+      <span>R Anwar Pasha.Portfolio</span>
+    </div>
+  </div>
+</body>
+
+</html>

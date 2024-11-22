@@ -1,0 +1,167 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/styles3.css' %}">
+  <title>main page</title>
+</head>
+
+<body>
+
+  <!--navigation bar..-->
+  <div class="navig">
+    <div class="">
+      <a href="{% url 'index' %}">Home</a>
+    </div>
+    <div class="">
+      <a href="{% url 'contacts' %}">Contacts</a>
+    </div>
+    <div class="">
+      <a href="{% url 'certificates' %}">Certificates</a>
+    </div>
+  </div>
+  <!-- moving text -->
+
+  <div class="move-box">
+    <div class="movewords">
+      🌞WELCOME TO SITE🌞
+    </div>
+  </div>
+
+  <!---The content box-->
+
+  <h2>🎓🎓ABOUT ME🎓🎓</h2>
+
+  <div class="content">
+    <hr>
+    <p>
+      I am <b>Mr.R Anwar Pasha</b>, recently graduatefrom a <b>Bachelor of Engineering (B.E.) degree in Computer Science
+        and Engineering (CSE) at SEA College of Engineering and Technology</b>. My enthusiasm fortechnology,programming,
+      and innovation has driven me to explore the dynamic world of computer science, where I am eager to contribute and
+      make an impact. Over the course of my studies, I have built a strong foundation in areas like algorithms, data
+      structures, software development, and artificial intelligence.
+      My interests are broad, but I am especially fascinated by fields such as machine learning, web development, and
+      cybersecurity. I continuously work on personal projects,attend workshops, and participate in coding challenges to
+      further improve my technical skills and stay updated with the latest industry trends.
+      I believe in the power of teamwork and have collaborated with peers on several academic projects. These
+      experiences have helped me develop not only my technical skills but also my ability to work effectively in
+      collaborative settings.
+      In the future, I aim to work in a challenging environment where I can leverage my knowledge to solve real-world
+      skills but also my ability to work effectively in collaborative settings.
+
+      <br><img src="{%static 'images/sign.jpg' %}" alt="" style="height:60px; width: 150px;">
+      <br>R Anwar Pasha(Bangalore)
+
+    </p>
+    <hr>
+  </div>
+
+  <!--skills box-->
+
+  <h2>🗞️🗞️SKILLS🗞️🗞️</h2>
+  <hr>
+
+  <!---skiss added by grid..-->
+  <div class="complete_grid">
+    <div class="container">
+      <div>
+        <img src=" {% static 'images/HTML.jpg' %}" alt="Avatar">
+      </div>
+
+      <div>
+        <img src=" {% static 'images/CSS.jpg' %}" alt="Avatar">
+      </div>
+
+      <div>
+        <img src=" {% static 'images/JavaScript.jpg' %}" alt="Avatar">
+      </div>
+      <div>
+        <img src=" {% static 'images/java.jpg' %}" alt="Avatar">
+      </div>
+    </div>
+
+
+
+    <div class="container">
+      <div>
+        <img src=" {% static 'images/MYSQL.jpg' %}" alt="Avatar">
+      </div>
+
+      <div>
+        <img src=" {% static 'images/python_image.jpg' %}" alt="Avatar">
+      </div>
+
+      <div>
+        <img src=" {% static 'images/REACT_JS.jpg' %}" alt="Avatar">
+      </div>
+      <div>
+        <img src=" {% static 'images/DJANGO.jpg' %}" alt="Avatar">
+      </div>
+    </div>
+
+    <div class="container">
+      <div>
+        <img src=" {% static 'images/Ms_Office.jpg' %}" alt="Avatar">
+      </div>
+
+      <div>
+        <img src=" {% static 'images/GitHub.jpg' %}" alt="Avatar">
+      </div>
+
+      <div>
+        <img src=" {% static 'images/c_update.jpg' %}" alt="Avatar">
+      </div>
+
+      <div>
+        <img src=" {% static 'images/bootstarp_image.jpg' %}" alt="Avatar">
+      </div>
+
+      <div>
+        <img src=" {% static 'images/vs_id.jpg' %}" alt="Avatar">
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+  <!--end skills -->
+
+
+
+
+
+
+
+
+
+
+  <!-- --footer-->
+
+  <div class="footer-container">
+    <div>
+      <span>&#169;</span><span>2024</span>
+      <span>R Anwar Pasha.Portfolio</span>
+    </div>
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+.bdy {
+  background-color: azure;
+}
+
+.navig {
+  display: flex;
+  align-items: center;
+  margin: 6px;
+  height: 60px;
+  border: 1px solid rgb(177, 176, 176);
+  box-shadow: 1px 1px rgb(107, 106, 106);
+  
+}
+
+.navig>div {
+  background-color: rgb(5, 5, 6);
+  color: white;
+  width: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 36px;
+}
+
+a{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+/*form css styles*/
+
+.form-container {
+  display: flex;
+  margin-bottom: 70px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(241, 211, 211);
+  background-color: aqua;
+  border-radius: 10px;
+  box-shadow: 2px 2px rgb(241, 213, 213);
+  margin-top: 65px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
+.movewords {
+  border: 2px solid black;
+  background-color:rgb(162, 162, 239);
+  border-radius: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  color:white;
+  width: 100%;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 30px;
+ 
+
+}
+
+@media screen and (max-width:450px){
+  .movewords{
+    font-size:  17px;
+  }
+}
+
+@media screen and (max-width:460px){
+  .form-container {
+    width: 300px;
+    border-color: green;
+    margin-left: 75px;
+    margin-right: 75px;
+    padding:50px;
+    /* margin-right: 77px; */
+  }
+}
+
+
+
+
+.footer-container {
+ 
+
+  font-family: 'Times New Roman', Times, serif;
+  position: fixed;
+  margin: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 15px;
+  background: rgb(123, 167, 123);
+  color: white;
+  font-size: 12px; 
+  text-align: center;
+}
+/* css for certificates...*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 18px;
+  margin-top: 10px;
+  margin-bottom: 70px;
+}
+.grid-item {
+  padding: 18px;
+  font-size: 21px;
+  text-align: center;
+}
+.grid-img{
+  height: 200px;
+  width: 284px;
+  
+}
+.grid-img>img{
+  height: 200px;
+  width: 100%;
+  
+}
+.grid-content{
+  background-color: bisque;
+  height: 120px;
+  width: 285px;
+  margin-top: 4px;
+  padding: 0px;
+  
+}
+.grid-content>p{
+  padding: 0;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+/*carousal css*/
+
+* {box-sizing: border-box;
+}
+.bdy {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {vertical-align: middle;
+
+}
+
+.sliding-images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 330px;
+  position: relative;
+  margin-top:45px;
+  margin-left: 45px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+@media screen and (max-width:600px){
+  .slideshow-container{   
+    border-color: green;
+    margin-right:60px;
+  }
+}
+
+.grid-img:hover {
+  -ms-transform: scale(1.4); /* IE 9 */
+  -webkit-transform: scale(1.3); /* Safari 3-8 */
+  transform: scale(1.3); 
+}
+
+.mySlides>img{
+  height: 200px;
+  width: 330px;
+}
+
+
+
+@media screen and (max-width:600px){
+  .grid-container{   
+    display: grid;
+    grid-template-columns: 100%; 
+    margin-right: 50px;
+    margin-left: 50px;
+    
+  }
+}

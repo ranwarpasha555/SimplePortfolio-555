@@ -1,0 +1,238 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/styles1.css' %}">
+  <title>Certificates</title>
+</head>
+
+<body class="bdy">
+  <!--navigation bar..-->
+
+  <div class="navig">
+    <div class="">
+      <a href="{% url 'index' %}">Home</a>
+    </div>
+    <div class="">
+      <a href="{% url 'contacts' %}">Contacts</a>
+    </div>
+
+    <div class="">
+      <a href="{% url 'certificates' %}">Certificates</a>
+    </div>
+  </div>
+
+
+  <!--moving head-->
+
+  <div class="move-box">
+    <div class="movewords">
+      🌞MY CERTIFICATES🌞
+    </div>
+  </div>
+
+  <!--carsoul..-->
+  <div class="sliding-images">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="{% static 'images/my-graduate.jpg' %}">
+      </div>
+      <div class="mySlides fade">
+        <img src="{% static 'images/full.jpg' %}">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="{% static 'images/sea-engg.jpg' %}">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+  </div>
+  <br>
+
+
+
+  <!--full sertificates-->
+  <div class="main">
+    <div class="grid-container">
+      <div class="grid-item">
+        <div class="grid-img">
+          <img src="{% static 'images/web development training intershala.jpg' %}" alt="">
+        </div>
+
+        <div class="grid-content">
+          <p>This is certification from Intershala training which helps to understand the fundamentals of web
+            technology with web tech languages.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="grid-img">
+          <img src="{% static 'images/intern and job prep intershala.jpg' %}" alt="">
+        </div>
+        <div class="grid-content">
+          <p>This is certification of Intern and job preparation from Intershala online.
+          </p>
+        </div>
+
+      </div>
+      <div class="grid-item">
+        <div class="grid-img">
+          <img src="{% static 'images/python intern certificate coder cave.jpg' %}" alt="">
+        </div>
+        <div class="grid-content">
+          <p>This is 1 month Intern certification of python development from coder cave which is online.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="grid-img">
+          <img src="{% static 'images/c++ from infosys springboard.jpg' %}" alt="">
+        </div>
+        <div class="grid-content">
+          <p>This is certification of C++ from infosys springboard which is online.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="grid-item">
+        <div class="grid-img">
+          <img src="{% static 'images/slash mark ml intern certiificate.jpg' %}" alt="">
+        </div>
+        <div class="grid-content">
+          <p>This is 2 month certification of ML internship from slash mark which is online.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="grid-item">
+        <div class="grid-img">
+          <img src="{% static 'images/dbms from scaler.jpg' %}" alt="">
+        </div>
+        <div class="grid-content">
+          <p>This is certification of DBMS fundamentals from scalar which is online.
+
+          </p>
+        </div>
+      </div>
+
+
+      <div class="grid-item">
+        <div class="grid-img">
+          <img src="{% static 'images/ml with python from IBM coognizent.jpg' %}" alt="">
+        </div>
+        <div class="grid-content">
+          <p>This is certification of ML with Python and its fundamental concepts from IBM cognizent whichh is online.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="grid-item">
+        <div class="grid-img">
+          <img src="{% static 'images/jobaj dataanlysis workshop.jpg' %}" alt="">
+        </div>
+        <div class="grid-content">
+          <p>This is certification of Data Analysis workshop which is conduscted by the Jobaj online.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="grid-item">
+        <div class="grid-img">
+          <img src="{% static 'images/Py3 in infosysy springboard.jpg' %}" alt="">
+        </div>
+        <div class="grid-content">
+          <p>This is certification of python3 fundamentals from infosys spring board which is online.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="grid-img">
+          <img src="{% static 'images/Ml offer letter from neurons lab.jpg' %}" alt="">
+        </div>
+        <div class="grid-content">
+          <p>This is offer letter of machine Learning from Neurons lab.
+          </p>
+        </div>
+      </div>
+
+
+
+      <div class="grid-item">
+        <div class="grid-img">
+          <img src="{% static 'images/bharath intern ml offer letter.jpg' %}" alt="">
+        </div>
+        <div class="grid-content">
+          <p>This is certification of Machine Learning from Bharath Intern ehich is online.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="grid-img">
+          <img src="{% static 'images/thinker complete from Udemy certificate.jpg' %}" alt="">
+        </div>
+        <div class="grid-content">
+          <p>This is certification of Python GUI Thinker complete from Udemy site.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--footer is ready-->
+  <div class="footer-container">
+
+    <div>
+      <span>&#169;</span><span>2024</span>
+      <span>R Anwar Pasha.Portfolio</span>
+    </div>
+
+
+  </div>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+
+
+
+</body>
+
+</html>
